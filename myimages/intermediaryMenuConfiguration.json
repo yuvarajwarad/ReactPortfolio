@@ -1,0 +1,71 @@
+{
+    "key": "gmc_intermediary_menuconfig",
+    "description": "Menu Configuration for Intermediary Portal",
+    "value": {
+        "menus": [
+            {
+                "label": "Corporate Details",
+                "route": "CorporateDetails",
+                "icon": "https://example.com/icons/corporateDetails.png",
+                "default": true,
+                "order": 1
+            },
+            {
+                "label": "Claims",
+                "route": "Claims",
+                "icon": "https://cdn.starhealth.in/assets/gmc/intermediary/claims.svg",
+                "default": false,
+                "order": 2,
+                "subMenus": [
+                    {
+                        "label": "View",
+                        "route": "ViewClaims",
+                        "icon": "https://cdn.starhealth.in/assets/gmc/intermediary/eye.svg",
+                        "default": false,
+                        "order": 1
+                    },
+                    {
+                        "label": "Intimate",
+                        "route": "IntimateClaims",
+                        "icon": "https://cdn.starhealth.in/assets/gmc/intermediary/intimate.svg",
+                        "default": false,
+                        "order": 2
+                    }
+                ]
+            },
+            {
+                "label": "Endorsement",
+                "route": "Endorsement",
+                "icon": "https://cdn.starhealth.in/assets/gmc/intermediary/endorsment.svg",
+                "default": false,
+                "order": 3
+            },
+            {
+                "label": "CD Balance",
+                "route": "CdBalance",
+                "icon": "https://cdn.starhealth.in/assets/gmc/intermediary/balance.svg",
+                "default": false,
+                "order": 4
+            },
+            {
+                "label": "Download Center",
+                "route": "DownloadCenter",
+                "icon": "https://cdn.starhealth.in/assets/gmc/intermediary/download.svg",
+                "default": false,
+                "order": 5
+            }
+        ],
+        "topIcons": [
+            {
+                "route": "Notifications",
+                "icon": "https://cdn.starhealth.in/assets/gmc/intermediary/notification.svg",
+                "order": 1
+            },
+            {
+                "route": "Dashboard",
+                "icon": "/assets/icons/dashboard.svg",
+                "order": 2
+            }
+        ]
+    }
+}

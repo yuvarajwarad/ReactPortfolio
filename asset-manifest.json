@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ReactPortfolio/static/css/main.e3f00961.css",
-    "main.js": "/ReactPortfolio/static/js/main.f037409a.js",
-    "static/js/453.6fd83009.chunk.js": "/ReactPortfolio/static/js/453.6fd83009.chunk.js",
+    "main.css": "/ReactPortfolio/static/css/main.0649ff67.css",
+    "main.js": "/ReactPortfolio/static/js/main.0f4759e7.js",
+    "static/js/453.3184abbb.chunk.js": "/ReactPortfolio/static/js/453.3184abbb.chunk.js",
     "index.html": "/ReactPortfolio/index.html",
     "static/media/blob-haikei.svg": "/ReactPortfolio/static/media/blob-haikei.ed4231cd548cd312fe4f.svg",
-    "main.e3f00961.css.map": "/ReactPortfolio/static/css/main.e3f00961.css.map",
-    "main.f037409a.js.map": "/ReactPortfolio/static/js/main.f037409a.js.map",
-    "453.6fd83009.chunk.js.map": "/ReactPortfolio/static/js/453.6fd83009.chunk.js.map"
+    "main.0649ff67.css.map": "/ReactPortfolio/static/css/main.0649ff67.css.map",
+    "main.0f4759e7.js.map": "/ReactPortfolio/static/js/main.0f4759e7.js.map",
+    "453.3184abbb.chunk.js.map": "/ReactPortfolio/static/js/453.3184abbb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3f00961.css",
-    "static/js/main.f037409a.js"
+    "static/css/main.0649ff67.css",
+    "static/js/main.0f4759e7.js"
   ]
 }
