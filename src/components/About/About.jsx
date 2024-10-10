@@ -19,10 +19,10 @@ function About() {
       <div className="Container">
         <SectionTitle>About Me</SectionTitle>
         <div className="BigCard " style={{backgroundColor:"black"}}>
-          <ProfileImage src="/myimages/LookingAtU.jpg" alt="Profile Image" />
+          <ProfileImage src=".//myimages/LookingAtU.jpg" alt="Profile Image" />
           <div className="AboutBio">
             <BioText>
-              Hello! My name is <strong>Yuvraj Warad</strong>. I’m from Maharashtra, India, and have been living in Pune for the past seven years. I’m currently working as a Software Engineer (frontend Developer) with over 1 years of experience. During this time, I’ve developed strong skills in various technologies and have been involved in numerous projects.
+              Hello! My name is <strong>Yuvraj Warad</strong>. I’m from Maharashtra, India, and have been living in Pune for the past five years. I’m currently working as a Software Engineer (frontend Developer) with over 1 years of experience. During this time, I’ve developed strong skills in various technologies and have been involved in numerous projects.
               <br />
               <br />
               My journey into technology started with a passion for problem-solving, which led me to study Computer Systems Technology. This challenging program helped me develop a robust work ethic and build valuable friendships.

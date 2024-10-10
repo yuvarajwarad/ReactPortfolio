@@ -7,19 +7,26 @@ const StyledIconButton = styled(IconButton)`
   position: fixed;
   bottom: 10px;
   right: 10px;
-  color: white;
+  color: white; /* Keep text color white for visibility on black background */
   padding: 5px;
 `;
 
 const StyledArrowIcon = styled(MdKeyboardArrowUp)`
-  background-color: #007bff;
+  background-color: #444; /* Dark background for the icon button */
+  color: white; /* Ensure the icon is white for better visibility */
   border-radius: 50%;
   padding: 5px;
-  box-shadow: 0px 4px 20px rgba(160, 170, 180, 0.6);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6); /* Darker shadow for contrast */
+  transition: background-color 0.3s;
+
+  /* Change background color on hover for better interaction feedback */
+  &:hover {
+    background-color: #007bff; /* Blue background on hover */
+  }
 `;
 
 function ScrollToTop() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const [shouldRender, setShouldRender] = useState(false);
 
   const handleClick = () => {
@@ -34,6 +41,11 @@ function ScrollToTop() {
       else setShouldRender(false);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
+    
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (

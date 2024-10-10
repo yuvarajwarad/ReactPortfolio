@@ -3,11 +3,10 @@ import './GameComponent.css';
 
 const GameComponent = () => {
   const options = [
-    { label: 'home', link: '/home' },
-    { label: 'about', link: 'about' },
-    { label: 'about', link: 'about' },
-    { label: 'about', link: 'about' },
-    { label: 'about', link: 'about' },
+    { label: 'Home', link: 'home' },
+    { label: 'About', link: 'about' },
+    { label: 'Projects', link: 'projects' },
+    { label: 'Contact', link: 'contact' },
   ];
 
   const [angle, setAngle] = useState(0);
@@ -18,21 +17,25 @@ const GameComponent = () => {
     if (spinning) return;
 
     setSpinning(true);
-    const rotations = 360 * 4; // 4 full rotations
-    const randomStop = Math.floor(Math.random() * options.length);
-    const finalAngle = rotations + randomStop * 72; // 72 degrees per option
+    const rotations = 360 * 3; // 3 full rotations
+    const randomStop = Math.floor(Math.random() * options.length); // Random stop between 0 and 3
+    const finalAngle = rotations + randomStop * 90; // Each option is 90 degrees apart
 
+    // Set the rotation angle
     setAngle(finalAngle);
 
+    // Set timeout to simulate spinning and determine the option at the front
     setTimeout(() => {
       setSpinning(false);
-      setCurrentOption(randomStop);
-      window.location.href = options[randomStop].link; // Redirect after stopping
+      setCurrentOption(randomStop); // Highlight the correct option
+
+      // Navigate to the correct section using ID
+      window.location.href = `#${options[randomStop].link}`;
     }, 4000); // Adjust timing based on rotation speed
   };
 
   return (
-    <div className="game-container">
+    <div id='game' className="game-container">
       <div className="scrolling-text">
         <span className="scrolling-message">
           Hello, Hi! Welcome to my game. Let's play and decide where you should go first to view my portfolio.
@@ -54,7 +57,7 @@ const GameComponent = () => {
               key={index}
               className={`option ${index === currentOption ? 'active' : ''}`}
               style={{
-                transform: `rotate(${index * 72}deg) translate(150px) rotate(-${index * 72}deg)`,
+                transform: `rotate(${index * 90}deg) translate(125px) rotate(-${index * 90}deg)`,
               }}
             >
               {option.label}
